@@ -1,0 +1,8 @@
+figure div.anatomy {
+    text-align:center;
+    padding-top:80px;
+}
+figure div.anatomy img {
+    width:800px;
+    border-radius:50px;
+}

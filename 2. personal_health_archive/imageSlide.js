@@ -23,7 +23,7 @@ const nextMoveTiming = {
     easing:"ease-in-out",
 };
 
-prev.addEventListener('click', ()=> {
+function slidePrev() {
     imageList[0].animate(prevMove, prevMoveTiming);
     imageList[1].animate(prevMove, prevMoveTiming);
     imageList[2].animate(prevMove, prevMoveTiming);
@@ -36,8 +36,8 @@ prev.addEventListener('click', ()=> {
         imageList[2].setAttribute("src", "image/main/"+(thirdImageNumber)+".png");
         imageNumber--;
     },600);
-})
-next.addEventListener('click', ()=> {
+};
+function slideNext() {
     imageList[0].animate(nextMove, nextMoveTiming);
     imageList[1].animate(nextMove, nextMoveTiming);
     imageList[2].animate(nextMove, nextMoveTiming);
@@ -50,4 +50,17 @@ next.addEventListener('click', ()=> {
         imageList[2].setAttribute("src", "image/main/"+(thirdImageNumber)+".png");
         imageNumber++;
     },600);
+}
+
+let autoSlide = setInterval(slideNext, 5000);
+
+prev.addEventListener('click', ()=> {
+    slidePrev();
+    clearInterval(autoSlide);
+    autoSlide = setInterval(slideNext, 5000);
+})
+next.addEventListener('click', ()=> {
+    slideNext();
+    clearInterval(autoSlide);
+    autoSlide = setInterval(slideNext, 5000);
 })

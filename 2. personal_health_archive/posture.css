@@ -1,0 +1,13 @@
+article {
+    margin:80px;
+    display:grid;
+    grid-template-columns: 40% 55%;
+    grid-template-rows: auto;
+    gap:50px;
+}
+article img {
+    width:100%;
+}
+article p {
+    white-space: normal;
+}
