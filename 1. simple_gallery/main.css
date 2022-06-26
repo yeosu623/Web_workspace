@@ -1,0 +1,43 @@
+* { /* 레이아웃 제작 전 초기화 */
+    margin : 0px;
+    padding : 0px;
+}
+header span.warning {
+    color:orange;
+    opacity:0;
+}
+@media screen and (max-width:1000px) {
+    header span.warning {
+        opacity:1;
+    }
+}
+
+nav {
+    display:inline-flex;
+    float:left;
+    margin-top:150px;
+}
+main {
+    display:inline-flex;
+    float:left;
+    margin:50px;
+    width:500px;
+    height:300px;
+}
+main div img {
+    position:absolute;
+    width:100px;
+    height:100px;
+}
+main div img.img0 {
+    margin-top:100px;
+}
+main div img.img1 {
+    margin-left:100px;
+    width:300px;
+    height:300px;
+}
+main div img.img2 {
+    margin-left:400px;
+    margin-top:100px;
+}

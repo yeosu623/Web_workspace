@@ -1,0 +1,42 @@
+figure div.imageSlide {
+    height:250px;
+    background-color: aliceblue;
+}
+figure div img.leftbutton {
+    position:absolute;
+    margin-top:60px;
+}
+figure div img.rightbutton {
+    position:relative;
+    float:right;
+    margin-top:60px;
+}
+figure div div.imageList{
+    position:absolute;
+    width:800px;
+    height:250px;
+    left:50%;
+    transform:translate(-150%);
+}
+@media screen and (max-width:800px) {
+    figure div div.imageList {
+        left:0;
+        transform:translate(-100%);
+    }
+    figure div div img.img3 {
+        display:none;
+    }
+}
+
+article {
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    padding-top:50px;
+    padding-left:150px;
+    padding-right:150px;
+}
+article div {
+    padding:30px;
+    text-align:center;
+}
