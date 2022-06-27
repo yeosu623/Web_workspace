@@ -5,11 +5,13 @@ figure div.imageSlide {
 figure div img.leftbutton {
     position:absolute;
     margin-top:60px;
+    width:100px;
 }
 figure div img.rightbutton {
     position:relative;
     float:right;
     margin-top:60px;
+    width:100px;
 }
 figure div div.imageList{
     position:absolute;
@@ -33,10 +35,15 @@ article {
     flex-wrap:nowrap;
     justify-content: space-between;
     padding-top:50px;
-    padding-left:150px;
-    padding-right:150px;
+    padding-left:100px;
+    padding-right:100px;
 }
 article div {
+    width:33%;
     padding:30px;
     text-align:center;
+    white-space: normal;
+}
+article div p {
+    font-size: 15px;
 }

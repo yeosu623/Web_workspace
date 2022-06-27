@@ -12,10 +12,11 @@ a:hover {
 
 body {
     min-width:800px;
-    max-width:2000px;
+    max-width:2400px;
     display:flex;
     flex-direction: column;
     white-space: nowrap;
+    background-image: url('image/background/bg_main.jpg');
 }
 @media screen and (min-width:800px) {
     body {

@@ -15,11 +15,11 @@ const nextMove = [
     {transform:'translate(-100.8%)'}
 ]
 const prevMoveTiming = {
-    duration :600,
+    duration :800,
     easing:"ease-in-out",
 };
 const nextMoveTiming = {
-    duration :600,
+    duration :800,
     easing:"ease-in-out",
 };
 
@@ -31,11 +31,11 @@ function slidePrev() {
     secondImageNumber = (imageNumber-1) % 4;
     thirdImageNumber = (imageNumber) % 4;
     setTimeout(() => {
-        imageList[0].setAttribute("src", "image/main/"+(firstImageNumber)+".png");
-        imageList[1].setAttribute("src", "image/main/"+(secondImageNumber)+".png");
-        imageList[2].setAttribute("src", "image/main/"+(thirdImageNumber)+".png");
+        imageList[0].setAttribute("src", "image/main/"+(firstImageNumber)+".jpg");
+        imageList[1].setAttribute("src", "image/main/"+(secondImageNumber)+".jpg");
+        imageList[2].setAttribute("src", "image/main/"+(thirdImageNumber)+".jpg");
         imageNumber--;
-    },600);
+    },800);
 };
 function slideNext() {
     imageList[0].animate(nextMove, nextMoveTiming);
@@ -45,11 +45,11 @@ function slideNext() {
     secondImageNumber = (imageNumber+1) % 4;
     thirdImageNumber = (imageNumber+2) % 4;
     setTimeout(() => {
-        imageList[0].setAttribute("src", "image/main/"+(firstImageNumber)+".png");
-        imageList[1].setAttribute("src", "image/main/"+(secondImageNumber)+".png");
-        imageList[2].setAttribute("src", "image/main/"+(thirdImageNumber)+".png");
+        imageList[0].setAttribute("src", "image/main/"+(firstImageNumber)+".jpg");
+        imageList[1].setAttribute("src", "image/main/"+(secondImageNumber)+".jpg");
+        imageList[2].setAttribute("src", "image/main/"+(thirdImageNumber)+".jpg");
         imageNumber++;
-    },600);
+    },800);
 }
 
 let autoSlide = setInterval(slideNext, 5000);
