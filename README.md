@@ -6,5 +6,5 @@
 ### 1. Simple Gallery
 애니메이션 효과가 있는 갤러리 화면을 만들었습니다.
 
-### 2. Personal_health_archive (WIP)
-개인 운동 기록 보관소를 만듭니다.
+### 2. Personal_health_archive
+개인 운동 기록 보관소 입니다. 각종 애니메이션 효과와 차트를 구현하였습니다.
